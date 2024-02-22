@@ -10,15 +10,17 @@ export const metadata: Metadata = {
     description: "Welcome to my website!",
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
+export default function RootLayout({children,}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
-        <div>
-            <Navbar/>
-            <body className={inter.className}>{children}</body>
-        </div>
+        <>
+            <body className={inter.className}>
+            <div className="grid">
+                <Navbar/>
+                {children}
+            </div>
+            </body>
+        </>
     );
 }
