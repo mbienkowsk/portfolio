@@ -16,7 +16,7 @@ export default function Home() {
                 of Technology. Passionate about all aspects of computer science, from low-level assembly
                 programming, web development, to Artificial Intelligence, in which I plan to specialize during
                 my degree, I think of myself as a versatile, all-round developer, ready to take on tasks in any
-                /. In my free time I enjoy cooking, fishing and growing my houseplant collection.
+                domain. In my free time I enjoy cooking, fishing and growing my houseplant collection.
             </p>
             <div className="flex justify-around">
                 <div className="flex flex-col">
