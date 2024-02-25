@@ -46,28 +46,56 @@ export default function Home() {
     </div>
 
     const projectsSection = <div className="flex flex-col gap-16">
-        <div className="flex gap-16">
+        <div className="flex gap-16 justify-center">
             <ProjectCard title="Desktop chess app"
                          description="C++ and Qt"
-                         imgPath={"/chess.jpg"}/>
+                         imgPath={"/chess.jpg"}
+                         url="https://github.com/mbienkowsk/proi-chess"
+            />
             <ProjectCard title="Course rating website"
                          description="CRA + Spring Boot, I was responsible for the frontend."
                          imgPath={"/courses-2.png"}
+                         url="https://github.com/mGarbowski/pap-projekt"
             />
             <ProjectCard title="Intro to AI lab work"
                          description="Python implementations of essential AI concepts"
-                         imgPath={"/nn.png"}/>
+                         imgPath={"/nn.png"}
+                         url={"https://github.com/Intro-to-AI-mbienkowsk"}
+            />
         </div>
-        <div className="flex gap-16">
+        <div className="flex gap-16 justify-center">
             <ProjectCard imgPath={"/parp.png"} title="Programming paradigms" description="Implementation of the same
-                    puzzle game in smalltalk, prolog and haskell"/>
-            <ProjectCard imgPath={"/form.png"} title="Formfiller"
-                         description="Python utility for quick event registration purposes:)"/>
+                    puzzle game in smalltalk, prolog and haskell"
+                         url="" //todo
+            />
+            <ProjectCard imgPath={"/form.png"} title="Autoform"
+                         description="Python, selenium. Aims to automate registration for debating tournaments and more. In development"
+                         url="https://github.com/mbienkowsk/autoform"
+            />
+            <ProjectCard imgPath={"/checkers.jpg"} title={"Checkers"}
+                         description={"My first bigger python project - desktop checkers app with a pretty decent minimax bot"}
+                         url="https://github.com/mbienkowsk/pipr-checkers"/>
         </div>
     </div>
     return (
-        <main className="mx-64">
-            <h1 id="top" className={"text-6xl pt-64 pb-10 text-center "}>Maksym Bieńkowski</h1>
+        <main>
+            <div className="grid">
+                <h1 id="top" className={"text-6xl pt-64 pb-10 text-center "}>Maksym Bieńkowski</h1>
+                <div className="flex justify-center">
+                    <Link href="https://github.com/mbienkowsk"
+                          className="px-6 pt-6 hover:bg-gray-700 rounded-b text-center hover:text-on_hover duration-200"><FontAwesomeIcon
+                        icon={faGithub} width={ICON_SIZE}/></Link>
+                    <Link href="https://www.linkedin.com/in/m-bienkowski/"
+                          className="px-6 pt-6 hover:bg-gray-700 rounded-b text-center hover:text-on_hover duration-200"><FontAwesomeIcon
+                        icon={faLinkedin} width={ICON_SIZE}/></Link>
+                    <Link href="mailto:bienkowski.maksym@gmail.com"
+                          className="px-6 pt-6 hover:bg-gray-700 rounded-b text-center hover:text-on_hover duration-200 group">
+                        <FontAwesomeIcon className="group-hover:hidden group-hover:opacity-0" icon={faEnvelope}
+                                         width={ICON_SIZE + 3}/>
+                        <FontAwesomeIcon className="hidden group-hover:block" icon={faEnvelopeOpen} width={ICON_SIZE}/>
+                    </Link>
+                </div>
+            </div>
             <AccordionElement title={"ABOUT ME"} content={aboutSection}/>
             <AccordionElement title={"PROJECTS"} content={projectsSection}/>
             <AccordionElement title={"RÉSUMÉ"} content={
