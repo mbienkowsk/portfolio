@@ -17,9 +17,10 @@ export default function RootLayout({children,}: Readonly<{
     return (
         <html>
             <body className={jbmono.className}>
-            <div className="grid">
-                <Navbar/>
+            <div className="flex justify-center">
+            <div className="w-max  2xl:w-2/3">
                 {children}
+            </div>
             </div>
             </body>
         </html>

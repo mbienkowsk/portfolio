@@ -8,7 +8,6 @@ import {faEnvelope, faEnvelopeOpen} from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Home() {
-    const ICON_SIZE = 150;
     const SKILL_ICON_SIZE = 150;
     const ICON_SIZE = 30;
     const aboutSection = <div>
