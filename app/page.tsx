@@ -70,18 +70,19 @@ export default function Home() {
             <h1 id="top" className={"text-6xl pt-64 pb-10 text-center "}>Maksym Bieńkowski</h1>
             <AccordionElement title={"ABOUT ME"} content={aboutSection}/>
             <AccordionElement title={"PROJECTS"} content={projectsSection}/>
-            <AccordionElement title={"CHECK OUT MY RESUME!"} content={
+            <AccordionElement title={"RÉSUMÉ"} content={
                 <div className="flex justify-center">
-                    <a className={"text-5xl hover:text-on_hover duration-200"} href="/main.pdf">grab a
+                    <a className={"text-4xl hover:text-on_hover duration-200"} href="/main.pdf">grab a
                         copy</a>
                 </div>
             }/>
-            <AccordionElement title={"LET'S GET IN TOUCH!"} content={<div>
-                <div className="flex justify-center">
-                    <a className={"text-5xl hover:text-on_hover duration-200"}
-                       href="mailto:bienkowski.maksym@gmail.com">If you&apos;d like to collaborate or have any questions, feel free to email me:)</a>
-                </div>
-            </div>}/>
+            {/*<AccordionElement title={"LET'S GET IN TOUCH!"} content={<div>*/}
+            {/*    <div className="flex justify-center">*/}
+            {/*        <a className={"text-4xl hover:text-on_hover duration-200"}*/}
+            {/*           href="mailto:bienkowski.maksym@gmail.com">If you&apos;d like to collaborate or have any*/}
+            {/*            questions, feel free to email me:)</a>*/}
+            {/*    </div>*/}
+            {/*</div>}/>*/}
         </main>
     )
 }
