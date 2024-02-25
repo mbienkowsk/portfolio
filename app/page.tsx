@@ -1,10 +1,16 @@
 import Image from "next/image";
 import ProjectCard from "@/app/components/ProjectCard";
 import AccordionElement from "@/app/components/AccordionElement";
+import Link from "next/link";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {faEnvelope, faEnvelopeOpen} from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Home() {
     const ICON_SIZE = 150;
+    const SKILL_ICON_SIZE = 150;
+    const ICON_SIZE = 30;
     const aboutSection = <div>
         <div className="flex flex-col gap-20">
             <p className="text-3xl">I&apos;m a second year computer science student at the Warsaw University
@@ -15,30 +21,30 @@ export default function Home() {
             </p>
             <div className="flex justify-around">
                 <div className="flex flex-col">
-                    <h3 className="text-4xl">Some of the technologies I&apos;ve worked with:</h3>
+                    <h3 className="text-4xl text-center">Some of the technologies I&apos;ve worked with:</h3>
                     <div className="flex gap-16">
-                        <Image src={"/Python-Dark.svg"} alt="python skill image" width={ICON_SIZE}
-                               height={ICON_SIZE} className="p-4"/>
-                        <Image src={"/CPP.svg"} alt="CPP skill image" width={ICON_SIZE}
-                               height={ICON_SIZE} className="p-4"/>
-                        <Image src={"/React-Dark.svg"} alt="React skill image" width={ICON_SIZE}
-                               height={ICON_SIZE} className="p-4"/>
-                        <Image src={"/Bash-Dark.svg"} alt="Bash skill image" width={ICON_SIZE}
-                               height={ICON_SIZE} className="p-4"/>
-                        <Image src={"/CSS.svg"} alt="CSS skill image" width={ICON_SIZE}
-                               height={ICON_SIZE} className="p-4"/>
+                        <Image src={"/Python-Dark.svg"} alt="python skill image" width={SKILL_ICON_SIZE}
+                               height={SKILL_ICON_SIZE} className="p-4"/>
+                        <Image src={"/CPP.svg"} alt="CPP skill image" width={SKILL_ICON_SIZE}
+                               height={SKILL_ICON_SIZE} className="p-4"/>
+                        <Image src={"/React-Dark.svg"} alt="React skill image" width={SKILL_ICON_SIZE}
+                               height={SKILL_ICON_SIZE} className="p-4"/>
+                        <Image src={"/Bash-Dark.svg"} alt="Bash skill image" width={SKILL_ICON_SIZE}
+                               height={SKILL_ICON_SIZE} className="p-4"/>
+                        <Image src={"/CSS.svg"} alt="CSS skill image" width={SKILL_ICON_SIZE}
+                               height={SKILL_ICON_SIZE} className="p-4"/>
                     </div>
                     <div className="flex gap-16">
-                        <Image src={"/TypeScript.svg"} alt="TS skill image" width={ICON_SIZE}
-                               height={ICON_SIZE} className="p-4"/>
-                        <Image src={"/HTML.svg"} alt="HTML skill image" width={ICON_SIZE}
-                               height={ICON_SIZE} className="p-4"/>
-                        <Image src={"/Linux-Dark.svg"} alt="Linux skill image" width={ICON_SIZE}
-                               height={ICON_SIZE} className="p-4"/>
-                        <Image src={"/Git.svg"} alt="Git skill image" width={ICON_SIZE}
-                               height={ICON_SIZE} className="p-4"/>
-                        <Image src={"/NextJS-Dark.svg"} alt="Next skill image" width={ICON_SIZE}
-                               height={ICON_SIZE} className="p-4"/>
+                        <Image src={"/TypeScript.svg"} alt="TS skill image" width={SKILL_ICON_SIZE}
+                               height={SKILL_ICON_SIZE} className="p-4"/>
+                        <Image src={"/HTML.svg"} alt="HTML skill image" width={SKILL_ICON_SIZE}
+                               height={SKILL_ICON_SIZE} className="p-4"/>
+                        <Image src={"/Linux-Dark.svg"} alt="Linux skill image" width={SKILL_ICON_SIZE}
+                               height={SKILL_ICON_SIZE} className="p-4"/>
+                        <Image src={"/Git.svg"} alt="Git skill image" width={SKILL_ICON_SIZE}
+                               height={SKILL_ICON_SIZE} className="p-4"/>
+                        <Image src={"/NextJS-Dark.svg"} alt="Next skill image" width={SKILL_ICON_SIZE}
+                               height={SKILL_ICON_SIZE} className="p-4"/>
                     </div>
                 </div>
             </div>
