@@ -71,7 +71,7 @@ export default function Home() {
         <div className="flex gap-16 justify-center">
             <ProjectCard imgPath={"/parp.png"} title="Programming paradigms" description="Implementation of the same
                     puzzle game in smalltalk, prolog and haskell"
-                         url="" //todo
+                         url="https://github.com/Programming-Paradigms-mb-mg"
             />
             <ProjectCard imgPath={"/form.png"} title="Autoform"
                          description="Python, selenium. Aims to automate registration for debating tournaments and more. In development"
@@ -83,7 +83,7 @@ export default function Home() {
         </div>
     </div>
     return (
-        <main>
+        <main className="pb-48">
             <div className="grid">
                 <h1 id="top" className={"text-6xl pt-64 pb-10 text-center "}>Maksym Bieńkowski</h1>
                 <div className="flex justify-center">
