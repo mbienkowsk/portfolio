@@ -105,7 +105,7 @@ export default function Home() {
             <AccordionElement title={"PROJECTS"} content={projectsSection}/>
             <AccordionElement title={"RÉSUMÉ"} content={
                 <div className="flex justify-center">
-                    <a className={"text-4xl hover:text-on_hover duration-200"} href="/main.pdf">grab a
+                    <a className={"text-4xl hover:text-on_hover duration-200"} href="/cv.pdf">grab a
                         copy</a>
                 </div>
             }/>
