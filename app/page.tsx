@@ -104,10 +104,12 @@ export default function Home() {
             <AccordionElement title={"ABOUT ME"} content={aboutSection}/>
             <AccordionElement title={"PROJECTS"} content={projectsSection}/>
             <AccordionElement title={"RÉSUMÉ"} content={
-                <div className="flex justify-center">
-                    <a className={"text-4xl hover:text-on_hover duration-200"} href="/cv.pdf">grab a
-                        copy</a>
-                </div>
+            <div className="flex justify-center">
+                    <div className="flex gap-36">
+                        <a className={"text-4xl hover:text-on_hover duration-200"} href="/resume-en.pdf">EN</a>
+                        <a className={"text-4xl hover:text-on_hover duration-200"} href="/resume-pl.pdf">PL</a>
+                    </div>
+            </div>
             }/>
             {/*<AccordionElement title={"LET'S GET IN TOUCH!"} content={<div>*/}
             {/*    <div className="flex justify-center">*/}
