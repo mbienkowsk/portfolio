@@ -83,7 +83,7 @@ export default function Home() {
         </div>
     </div>
     return (
-        <main className="pb-48">
+        <main className="pb-48 min-h-screen">
             <div className="grid">
                 <h1 id="top" className={"text-6xl pt-64 pb-10 text-center "}>Maksym Bieńkowski</h1>
                 <div className="flex justify-center">
