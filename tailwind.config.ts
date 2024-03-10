@@ -20,6 +20,14 @@ const config: Config = {
       text_primary: '#cbd5e1',
       text_secondary: '#64748b',
       on_hover: '#71717a'
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+      '3xl': '2000px'
     }
   },
   plugins: [],
