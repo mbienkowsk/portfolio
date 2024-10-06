@@ -52,35 +52,38 @@ export default function Home() {
 
     const projectsSection = <div className="flex flex-col gap-16 justify-center items-center">
         <div className="flex flex-col xl:flex-row gap-16 justify-center">
-            <ProjectCard title="Desktop chess app"
-                description="C++ and Qt"
-                imgPath={"/chess.jpg"}
-                url="https://github.com/mbienkowsk/proi-chess"
-            />
+            <ProjectCard imgPath={"/db.png"} title={"Python ORM"}
+                description={"Python ORM and migration engine supporting SQLite and Postgres"}
+                url="https://github.com/sysy-inc/zprp-23z-python-orm" />
             <ProjectCard title="Course rating website"
                 description="CRA + Spring Boot, I was responsible for the frontend."
                 imgPath={"/courses-2.png"}
                 url="https://github.com/mGarbowski/pap-projekt"
+            />
+            <ProjectCard imgPath={"/monkey2.png"} title={"Monkey Interpreter"}
+                description={"Interpreter for the Monkey programming Language in Go"}
+                url="https://github.com/sysy-inc/zprp-23z-python-orm" />
+        </div>
+        <div className="flex flex-col xl:flex-row gap-16 justify-center">
+            <ProjectCard title="Desktop chess app"
+                description="C++ and Qt"
+                imgPath={"/chess.jpg"}
+                url="https://github.com/mbienkowsk/proi-chess"
             />
             <ProjectCard title="Intro to AI lab work"
                 description="Python implementations of essential AI concepts"
                 imgPath={"/nn.png"}
                 url={"https://github.com/Intro-to-AI-mbienkowsk"}
             />
-        </div>
-        <div className="flex flex-col xl:flex-row gap-16 justify-center">
             <ProjectCard imgPath={"/parp.png"} title="Programming paradigms" description="Implementation of the same
                     puzzle game in smalltalk, prolog and haskell"
                 url="https://github.com/Programming-Paradigms-mb-mg"
             />
-            <ProjectCard imgPath={"/form.png"} title="Autoform"
-                description="Python, selenium. Aims to automate registration for debating tournaments and more. In development"
-                url="https://github.com/mbienkowsk/autoform"
-            />
-            <ProjectCard imgPath={"/checkers.jpg"} title={"Checkers"}
-                description={"My first bigger python project - desktop checkers app with a pretty decent minimax bot"}
-                url="https://github.com/mbienkowsk/pipr-checkers" />
         </div>
+
+
+
+
     </div>
     return (
         <main className="pb-48 min-h-screen">
