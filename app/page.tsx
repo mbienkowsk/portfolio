@@ -12,11 +12,9 @@ export default function Home() {
     const ICON_SIZE = 30;
     const aboutSection = <div>
         <div className="flex flex-col gap-20">
-            <p className="text-3xl">I&apos;m a second year computer science student at the Warsaw University
-                of Technology. Passionate about all aspects of computer science, from low-level assembly
-                programming, web development, to Artificial Intelligence, in which I plan to specialize during
-                my degree, I think of myself as a versatile, all-round developer, ready to take on tasks in any
-                domain. In my free time I enjoy cooking, fishing and growing my houseplant collection.
+            <p className="text-3xl">I&apos;m a third year computer science student at the Warsaw University
+                of Technology. Even though I specialize in AI for my Engineer&apos;s Degree, I am passionate about
+                every aspect of software development and dabble in different areas of the field. In my spare time I enjoy fishing and growing my houseplant collection.
             </p>
             <div className="flex justify-around">
                 <div className="flex flex-col">
@@ -24,13 +22,13 @@ export default function Home() {
                     <div className="flex gap-16">
                         <Image src={"/Python-Dark.svg"} alt="python skill image" width={SKILL_ICON_SIZE}
                             height={SKILL_ICON_SIZE} className="p-4" />
+                        <Image src={"/GoLang.svg"} alt="Golang skill image" width={SKILL_ICON_SIZE}
+                            height={SKILL_ICON_SIZE} className="p-4" />
                         <Image src={"/CPP.svg"} alt="CPP skill image" width={SKILL_ICON_SIZE}
                             height={SKILL_ICON_SIZE} className="p-4" />
                         <Image src={"/React-Dark.svg"} alt="React skill image" width={SKILL_ICON_SIZE}
                             height={SKILL_ICON_SIZE} className="p-4" />
                         <Image src={"/Bash-Dark.svg"} alt="Bash skill image" width={SKILL_ICON_SIZE}
-                            height={SKILL_ICON_SIZE} className="p-4" />
-                        <Image src={"/CSS.svg"} alt="CSS skill image" width={SKILL_ICON_SIZE}
                             height={SKILL_ICON_SIZE} className="p-4" />
                     </div>
                     <div className="flex gap-16">
@@ -38,11 +36,11 @@ export default function Home() {
                             height={SKILL_ICON_SIZE} className="p-4" />
                         <Image src={"/HTML.svg"} alt="HTML skill image" width={SKILL_ICON_SIZE}
                             height={SKILL_ICON_SIZE} className="p-4" />
+                        <Image src={"/CSS.svg"} alt="CSS skill image" width={SKILL_ICON_SIZE}
+                            height={SKILL_ICON_SIZE} className="p-4" />
                         <Image src={"/Linux-Dark.svg"} alt="Linux skill image" width={SKILL_ICON_SIZE}
                             height={SKILL_ICON_SIZE} className="p-4" />
                         <Image src={"/Git.svg"} alt="Git skill image" width={SKILL_ICON_SIZE}
-                            height={SKILL_ICON_SIZE} className="p-4" />
-                        <Image src={"/NextJS-Dark.svg"} alt="Next skill image" width={SKILL_ICON_SIZE}
                             height={SKILL_ICON_SIZE} className="p-4" />
                     </div>
                 </div>
