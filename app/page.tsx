@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
+// TODO: make monkey interpreter public and link it
 
 
 export default function Home() {
@@ -28,17 +29,17 @@ export default function Home() {
                             height={SKILL_ICON_SIZE} className="p-4" />
                         <Image src={"/React-Dark.svg"} alt="React skill image" width={SKILL_ICON_SIZE}
                             height={SKILL_ICON_SIZE} className="p-4" />
-                        <Image src={"/Bash-Dark.svg"} alt="Bash skill image" width={SKILL_ICON_SIZE}
+                        <Image src={"/Htmx-Dark.svg"} alt="HTMX skill image" width={SKILL_ICON_SIZE}
                             height={SKILL_ICON_SIZE} className="p-4" />
                     </div>
                     <div className="flex gap-16">
                         <Image src={"/TypeScript.svg"} alt="TS skill image" width={SKILL_ICON_SIZE}
                             height={SKILL_ICON_SIZE} className="p-4" />
-                        <Image src={"/HTML.svg"} alt="HTML skill image" width={SKILL_ICON_SIZE}
-                            height={SKILL_ICON_SIZE} className="p-4" />
-                        <Image src={"/CSS.svg"} alt="CSS skill image" width={SKILL_ICON_SIZE}
+                        <Image src={"/Selenium.svg"} alt="Selenium skill image" width={SKILL_ICON_SIZE}
                             height={SKILL_ICON_SIZE} className="p-4" />
                         <Image src={"/Linux-Dark.svg"} alt="Linux skill image" width={SKILL_ICON_SIZE}
+                            height={SKILL_ICON_SIZE} className="p-4" />
+                        <Image src={"/Bash-Dark.svg"} alt="Bash skill image" width={SKILL_ICON_SIZE}
                             height={SKILL_ICON_SIZE} className="p-4" />
                         <Image src={"/Git.svg"} alt="Git skill image" width={SKILL_ICON_SIZE}
                             height={SKILL_ICON_SIZE} className="p-4" />
@@ -61,6 +62,7 @@ export default function Home() {
             <ProjectCard imgPath={"/monkey2.png"} title={"Monkey Interpreter"}
                 description={"Interpreter for the Monkey programming Language in Go"}
                 url="https://github.com/sysy-inc/zprp-23z-python-orm" />
+            todo
         </div>
         <div className="flex flex-col xl:flex-row gap-16 justify-center">
             <ProjectCard title="Desktop chess app"
