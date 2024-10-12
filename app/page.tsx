@@ -5,7 +5,6 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
-// TODO: make monkey interpreter public and link it
 
 
 export default function Home() {
@@ -61,8 +60,7 @@ export default function Home() {
             />
             <ProjectCard imgPath={"/monkey2.png"} title={"Monkey Interpreter"}
                 description={"Interpreter for the Monkey programming Language in Go"}
-                url="https://github.com/sysy-inc/zprp-23z-python-orm" />
-            todo
+                url="https://github.com/mbienkowsk/monkey-interpreter" />
         </div>
         <div className="flex flex-col xl:flex-row gap-16 justify-center">
             <ProjectCard title="Desktop chess app"
