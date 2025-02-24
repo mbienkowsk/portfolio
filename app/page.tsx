@@ -15,6 +15,7 @@ export default function Home() {
             <p className="text-3xl">I&apos;m a third year computer science student at the Warsaw University
                 of Technology. Even though I specialize in AI for my Engineer&apos;s Degree, I am passionate about
                 every aspect of software development and dabble in different areas of the field. In my spare time I enjoy fishing and growing my houseplant collection.
+                I am currently working on my Bachelor&apos;s thesis on the CMA-ES algorithm.
             </p>
             <div className="flex justify-around">
                 <div className="flex flex-col">
